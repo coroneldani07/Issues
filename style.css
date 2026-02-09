@@ -1,0 +1,96 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Cabecera */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .autores {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+header .fecha {
+    font-size: 0.9em;
+    color: #ecf0f1;
+}
+
+/* Contenido principal */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+/* Contenedor de imagen */
+.imagen-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.imagen-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+}
