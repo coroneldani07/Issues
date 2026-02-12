@@ -1,36 +1,28 @@
 # Diagrama de clases
 
 ```mermaid
+classDiagram
+    class Producto {
+        -String nombre
+        -double precioBase
+        +Producto(String nombre, double precioBase)
+        +getPrecioBase() double
+    }
 
-@startuml
-' =====================================
-' DIAGRAMA DE CLASES - Sistema de IVA
-' =====================================
+    class CalculadoraIVA {
+        -double IVA
+        +calcularPrecioFinal(double precio) double
+    }
 
-class Producto {
-    - String nombre
-    - double precioBase
-    + Producto(String nombre, double precioBase)
-    + double getPrecioBase()
-}
+    class Main {
+        +main(String[] args)
+    }
 
-class CalculadoraIVA {
-    - double IVA = 0.21
-    + double calcularPrecioFinal(double precio)
-}
+    class Scanner {
+        <<External>>
+    }
 
-class Main {
-    + void main(String[] args)
-}
-
-class Scanner <<External>>
-
-' Relaciones
-Main ..> Producto : crea instancia
-Main ..> CalculadoraIVA : usa para calcular
-Main ..> Scanner : usa para leer entrada
-
-@enduml
-
-
+    Main ..> Producto : crea instacia
+    Main ..> CalculadoraIVA : usa para calcular
+    Main ..> Scanner : lee entrada
 ```
