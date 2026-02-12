@@ -1,5 +1,6 @@
-# Diagrama de clases
+# Diagrama de sequencia
 
+```mermaid
 sequenceDiagram
     autonumber
     actor Usuario
@@ -29,3 +30,4 @@ sequenceDiagram
     deactivate C
     
     M->>Usuario: Imprime "Total con IVA: 24.2"
+```
