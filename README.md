@@ -1,6 +1,6 @@
 # Diagrama de clases
 
-```mermaid
+``mermaid
 
 @startuml
 ' =====================================
